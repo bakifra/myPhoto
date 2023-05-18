@@ -1,6 +1,6 @@
 const React = require('react')
 
-function Navigation (){
+function Navigation ({user}){
     return (
         <ul className="nav justify-content-end">
         <li className="nav-item">
@@ -8,11 +8,11 @@ function Navigation (){
             Главная
           </a>
         </li>
-        {/* {user ? ( */}
+        {user ? (
           <>
             <li className="nav-item">
               <a className="nav-link disabled">Привет, 
-              {/* {user.name}! */}
+              {user.name}!
               </a>
             </li>
             <li className="nav-item">
@@ -21,7 +21,7 @@ function Navigation (){
               </a>
             </li>
           </>
-        {/* ) : ( */}
+        ) : ( 
           <>
             <li className="nav-item">
               <a className="nav-link" href="/auth/register">
@@ -34,7 +34,7 @@ function Navigation (){
               </a>
             </li>
           </>
-        {/* )} */}
+         )} 
       </ul> 
     )
 }

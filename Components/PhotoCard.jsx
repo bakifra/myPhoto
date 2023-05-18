@@ -1,12 +1,12 @@
 const React = require("react");
 
-function PhotoCard({ photo }) {
+function PhotoPage({ photo }) {
   return (
     <div>
-        <img src={photo.url}> </img>
+        {/* <img src={photo.url}> </img> */}
         <btn> del </btn>
         <btn> fav </btn>
     </div>
   );
 }
-module.exports = PhotoCard; 
+module.exports = PhotoPage; 

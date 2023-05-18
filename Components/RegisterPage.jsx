@@ -8,27 +8,16 @@ function RegisterPage(){
       <form id="register-form">
         <div className="mb-3">
           <label htmlFor="exampleInputLogin1" className="form-label">
-            Логин
+           Имя
           </label>
           <input
-            type="login"
-            name="login"
+            type="name"
+            name="name"
             className="form-control"
             id="exampleInputLogin1"
             aria-describedby="loginHelp"
           />
         </div>
-        {/* <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="form-label">
-            Почта
-          </label>
-          <input
-            type="email"
-            name="email"
-            className="form-control"
-            id="exampleInputPassword1"
-          />
-        </div> */}
         <div className="mb-3">
           <label htmlFor="exampleInputPassword1" className="form-label">
             Пароль
@@ -55,7 +44,7 @@ function RegisterPage(){
           Регистрация
         </button>
       </form>
-      {/* <script src="/js/register.js" /> */}
+      <script src="/js/register.js" defer />
     </Layout>
     )
 }
