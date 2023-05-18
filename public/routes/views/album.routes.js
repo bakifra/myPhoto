@@ -14,6 +14,4 @@ mainRouts.get('/', async(req,res)=>{
     }
 })
 
-
-
 module.exports = mainRouts
