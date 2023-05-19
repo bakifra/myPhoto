@@ -1,5 +1,5 @@
-const React = require('react');
-const Navigation = require('./Navigation');
+const React = require("react");
+const Navigation = require("./Navigation");
 
 function Layout({ children, user }) {
   return (

@@ -7,13 +7,7 @@ function Photo({photo}){
         <h2 className={`descriptionAlbum${photo.id}`}>{photo.description}</h2>
             <button className={`buttonUpdate b${photo.id}`} type='button' data-id={photo.id}>update</button>
             <button className={`buttonDelete del${photo.id}`} type='button' data-id={photo.id} data-album={photo.albumId}>delete</button>
-       
-        
 
-        
-
-
-        {/* <FormUpdate car={car} /> */}
     </div>
     )
 }
