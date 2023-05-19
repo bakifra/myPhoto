@@ -1,9 +1,9 @@
-const React = require('react')
-const Navigation = require('./Navigation')
+const React = require("react");
+const Navigation = require("./Navigation");
 
-function Layout({children, user}){
-    return (
-        <html lang="ru">
+function Layout({ children, user }) {
+  return (
+    <html lang="ru">
       <head>
         {/* чтобы выводить нормально русский текст */}
         <meta charSet="UTF-8" />
@@ -14,21 +14,24 @@ function Layout({children, user}){
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
           crossOrigin="anonymous"
         />
+        <link rel="stylesheet" href="/css/styles.css" />
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-        <link rel="stylesheet" href="/css/style.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+        />
       </head>
       <body>
         <header>
-        {/* <script src='/js/dobavlenie.js' defer /> */}
-        <script src="/js/login.js" defer/>
-          <Navigation user = {user}/>
+          {/* <script src='/js/dobavlenie.js' defer /> */}
+          <script src="/js/login.js" defer />
+          <Navigation user={user} />
         </header>
         <div className="container">{children}</div>
       </body>
     </html>
-    )
+  );
 }
 
-module.exports = Layout
+module.exports = Layout;
