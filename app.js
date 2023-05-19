@@ -20,11 +20,11 @@ app.use(express.json());
 
 const albumRouter = require('./public/routes/views/album.routes')
 const authRouter = require('./public/routes/views/auth.router')
-const photoRouter = require('./public/routes/views/photo.routes')
+const photoRouts = require('./public/routes/views/photo.routes')
 const regoLogoApi = require('./public/routes/api/regoLogoApi.routes')
 
 app.use('/', albumRouter)
-app.use('/album', photoRouter)
+app.use('/album', photoRouts)
 app.use('/auth', authRouter)
 app.use('/api/auth',regoLogoApi)
 

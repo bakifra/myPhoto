@@ -1,6 +1,7 @@
+// const React = require('react')
 const photoRouts = require('express').Router()
 const {PhotoCard} = require('../../../db/models')
-const PhotoPage = require('../../../Components/PhotoCard')
+const PhotoPage = require('../../../Components/PhotoPage')
 
 photoRouts.get('/:id', async(req,res)=>{
     try {

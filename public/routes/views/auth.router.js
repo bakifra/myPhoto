@@ -1,5 +1,4 @@
 const React = require('react')
-// const ReactDOMServer = require('react-dom/server')
 const registerRouter = require('express').Router()
 
 const Login = require('../../../Components/LoginPage')
@@ -24,8 +23,8 @@ registerRouter.get('/register', (req,res)=>{
  })
 registerRouter.get('/logout', (req,res)=>{
     req.session.destroy(()=>{
-        res.clearCookie('user_sid')
-        res.redirect('/')
+        res.clearCookie('user_sid').redirect('/')
+        // res.redirect('/')
     })
 })
 
