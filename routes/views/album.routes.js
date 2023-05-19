@@ -1,8 +1,8 @@
 const mainRouts = require('express').Router()
 
-const {Album} = require('../../../db/models')
+const {Album} = require('../../db/models')
 
-const AlbumList = require('../../../Components/AlbumList')
+const AlbumList = require('../../Components/AlbumList')
 
 mainRouts.get('/', async(req,res)=>{
     try {

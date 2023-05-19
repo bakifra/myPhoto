@@ -1,8 +1,8 @@
 const React = require('react')
 const registerRouter = require('express').Router()
 
-const Login = require('../../../Components/LoginPage')
-const Register = require('../../../Components/RegisterPage')
+const Login = require('../../Components/LoginPage')
+const Register = require('../../Components/RegisterPage')
 
 registerRouter.get('/register', (req,res)=>{
     try{

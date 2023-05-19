@@ -33,8 +33,7 @@ function LoginPage() {
             Вход
           </button>
         </form>
-  
-        <script src="/js/login.js" defer/>
+
       </Layout>
     );
   }
