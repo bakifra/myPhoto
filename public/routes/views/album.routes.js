@@ -10,7 +10,7 @@ mainRouts.get('/', async(req,res)=>{
         res.send(res.renderComponent(AlbumList, {albums}))
     } catch (error) {
         console.error(error)
-        res.sendStatus(500)
+        res.status(500)
     }
 })
 
