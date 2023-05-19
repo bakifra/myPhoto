@@ -1,7 +1,7 @@
 const React = require('react')
 const Navigation = require('./Navigation')
 
-function Layout({children}){
+function Layout({children, user}){
     return (
         <html lang="ru">
       <head>
@@ -22,7 +22,8 @@ function Layout({children}){
       <body>
         <header>
         {/* <script src='/js/dobavlenie.js' defer /> */}
-          <Navigation />
+        <script src="/js/login.js" defer/>
+          <Navigation user = {user}/>
         </header>
         <div className="container">{children}</div>
       </body>
