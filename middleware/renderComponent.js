@@ -14,7 +14,7 @@ function renderComponent(reactComponent, props = {}, options = { htmlOnly: false
     return html;
   }
   const document = `<!DOCTYPE html>${html}`;
-  this.send(document);
+  return document;
 }
 function ssr(req, res, next) {
   res.renderComponent = renderComponent;
