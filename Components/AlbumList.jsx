@@ -10,7 +10,7 @@ function AlbumList({ albums, user }) {
           <Album key={album.id} album={album} user={user} />
         ))}
       </div>
-      {/* <script src="/scripts/delete.js" /> */}
+      
     </Layout>
   );
 }

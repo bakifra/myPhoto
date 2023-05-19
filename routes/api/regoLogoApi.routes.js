@@ -1,7 +1,7 @@
 const apiRegLog = require('express').Router()
 const bcrypt = require('bcrypt')
 
-const {User} = require('../../../db/models')
+const {User} = require('../../db/models')
 
 
 apiRegLog.post('/register', async (req,res)=>{
