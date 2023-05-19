@@ -4,7 +4,8 @@ const Photo = require('./Photo')
 function PhotoPage({photos}){
     return (
         <Layout >
-        <div className='albumList photoList' >
+        <div className='albumList1 photoList' >
+
            {photos.map(photo=> <Photo key={photo.id} photo={photo}/>)}
        </div>
        {/* <script src="/scripts/delete.js" /> */}

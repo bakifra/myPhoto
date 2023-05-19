@@ -1,5 +1,7 @@
+
 const formLogin = document.getElementById('login-form')
 // console.log(form);
+if(formLogin){
 formLogin.addEventListener('submit', async (event)=>{
     event.preventDefault()
     const form = event.target
@@ -38,3 +40,4 @@ formLogin.addEventListener('submit', async (event)=>{
           toastr.error(`${result.message}`);
     }
 })
+}
